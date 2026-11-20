@@ -11,7 +11,7 @@ namespace Assignment2
         //Question 18
         static void PrintFirstBook(string[] books)
         {
-            if(books.Length== 0) return;
+            if (books.Length == 0) return;
             Console.WriteLine(books[0]);
         }
         static void Main(string[] args)
@@ -56,11 +56,21 @@ namespace Assignment2
             #region Question 5
             //5.Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, 
             // Pages: 464" using the + operator. 
-            string title = "clean code";
-            int pages = 464;
-            Console.WriteLine("book: " + title + " ,pages: " + pages);
+            //string title = "clean code";
+            //int pages = 464;
+            //Console.WriteLine("book: " + title + " ,pages: " + pages);
             #endregion
 
+            #region Question 6
+            //6.Build the same sentence as above, but using string interpolation ($"..."). 
+            string title = "Clean Code";
+            int pages = 464;
+            Console.WriteLine($"Book: {title},Pages: {pages}");
+
+
+            #endregion
         }
+
     }
 }
+
